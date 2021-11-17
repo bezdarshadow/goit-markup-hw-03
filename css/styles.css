@@ -34,7 +34,6 @@ ul {
   padding: 0;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -54,6 +53,11 @@ ul {
   margin-right: auto;
 }
 
+
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -64,17 +68,19 @@ ul {
   align-items: center;
 }
 
-
 .site-nav .list {
   display: flex;
   align-items: center;
 }
 
-
-.contacts.list{
+.contacts.list {
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+
+.container-logo {
+  margin-right: 93px;
 }
 
 
@@ -131,23 +137,22 @@ ul {
 .address .link:focus {
   color: var(--accent-text-color);
 }
+
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-color);
 }
 
-
 .page-footer .address-text {
   margin-top: 20px;
   margin-bottom: 9px;
-} 
+}
 
 .page-footer .number {
   display: block;
   margin-top: 9px;
 }
-
 
 .address-text {
   margin: 0;
@@ -159,8 +164,6 @@ ul {
 }
 
 .hero {
-
-
   background-color: var(--bg-color);
   font-weight: 900;
   font-size: 44px;
@@ -169,8 +172,13 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-title {
 
+.hero-container{
+  padding-top:  200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
   margin-bottom: 40px;
 
   color: var(--another-text-color);
@@ -189,8 +197,7 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.title {
-  margin: 0;
+.section.features .title {
   margin-bottom: 10px;
 }
 
@@ -251,7 +258,6 @@ ul {
   text-align: center;
 }
 
-
 .section.features .section-list-item {
   margin-left: 30px;
 }
@@ -276,8 +282,7 @@ ul {
   margin-right: 0px;
 }
 
-
-.section.team .section-list{
+.section.team .section-list {
   display: flex;
   margin-top: 50px;
 }
@@ -290,9 +295,22 @@ ul {
   margin-right: 0px;
 }
 
+
+.bottom-card {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+.bottom-card .title {
+  margin-bottom: 4px;
+}
+
 .section-list-card .name {
   margin-top: 30px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 .section.team .post {
   padding-bottom: 30px;
@@ -300,7 +318,6 @@ ul {
 
 .section.team .card {
   border-radius: 0px 0px 4px 4px;
-  border-bottom: 2px solid black ;
 }
 .portfolio-gallery .title {
   color: var(--secondary-text-color);
@@ -333,10 +350,10 @@ ul {
   flex-wrap: wrap;
 }
 
-.portfolio-gallery-item{
+.portfolio-gallery-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  
+  border-bottom: 1px solid #EEEEEE;;
 }
 
 .portfolio-gallery-item:nth-child(3n) {
@@ -348,7 +365,6 @@ ul {
 }
 
 .logo {
-
   max-width: 145px;
 
   text-decoration: none;

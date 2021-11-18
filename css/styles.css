@@ -1,5 +1,6 @@
 :root {
   --secondary-text-color: #212121;
+  --hero-btn-focus: #188ce8;
   --main-text-color: #757575;
   --accent-text-color: #2196f3;
   --bg-color: #2f303a;
@@ -46,16 +47,38 @@ ul {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.button {
+  min-width: 73px;
+  border-radius: 4px;
+  border: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: var(--secondary-text-color);
+  background-color: var(--button-bg-color);
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+.button:focus,
+.button:hover {
+  color: var(--another-text-color);
+  background-color: var(--accent-text-color);
+}
 
 .page-header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -79,15 +102,16 @@ ul {
   margin-left: auto;
 }
 
-.container-logo {
-  margin-right: 93px;
+.logo {
+    margin-right: 93px;  
 }
-
 
 .list-item {
   margin-left: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
+
+.list-item:first-child {
+  margin-left: 0;
 }
 
 .site-nav .link {
@@ -96,6 +120,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .site-nav .link.current {
@@ -165,25 +192,23 @@ ul {
 
 .hero {
   background-color: var(--bg-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.hero-container{
-  padding-top:  200px;
+  padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
+  display: flex;
 }
 
 .hero-title {
-  margin-bottom: 40px;
-
   color: var(--another-text-color);
+
   margin: 0;
   margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero-button {
   color: var(--another-text-color);
@@ -195,6 +220,16 @@ ul {
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+.hero-button:focus,
+.hero-button:hover {
+  background-color: var(--hero-btn-focus);
+}
+
+
+.section.features {
+  padding-bottom: 0;
 }
 
 .section.features .title {
@@ -262,7 +297,7 @@ ul {
   margin-left: 30px;
 }
 
-.section.features .section-list-item:last-child {
+.section.features .section-list-item:first-child {
   margin-left: 0px;
 }
 
@@ -282,9 +317,12 @@ ul {
   margin-right: 0px;
 }
 
+.section.team .section-title {
+  margin-bottom: 50px;
+}
+
 .section.team .section-list {
   display: flex;
-  margin-top: 50px;
 }
 
 .section.team .section-list-card {
@@ -295,24 +333,23 @@ ul {
   margin-right: 0px;
 }
 
-
-.bottom-card {
+ .bottom-card {
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-
 .bottom-card .title {
   margin-bottom: 4px;
 }
 
-.section-list-card .name {
-  margin-top: 30px;
+.footer-card .name {
   margin-bottom: 10px;
 }
-.section.team .post {
+
+.section.team .footer-card {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -353,7 +390,7 @@ ul {
 .portfolio-gallery-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #EEEEEE;;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-gallery-item:nth-child(3n) {
@@ -374,32 +411,9 @@ ul {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo.two {
+.two {
   color: var(--secondary-text-color);
 }
-.logo.three {
+.three {
   color: var(--another-text-color);
-}
-
-.button {
-  min-width: 73px;
-  border-radius: 4px;
-  border: transparent;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
-  color: var(--secondary-text-color);
-  background-color: var(--button-bg-color);
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-}
-.button:focus,
-.button:hover {
-  color: var(--another-text-color);
-  background-color: var(--accent-text-color);
 }

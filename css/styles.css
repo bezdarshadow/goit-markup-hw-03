@@ -114,6 +114,18 @@ ul {
   margin-left: 0;
 }
 
+
+.site-nav .logo{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts.list .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+
 .site-nav .link {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -195,13 +207,16 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  display: flex;
 }
 
 .hero-title {
   color: var(--another-text-color);
 
+  max-width: 696px;
+
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 
   font-weight: 900;

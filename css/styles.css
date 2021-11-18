@@ -102,7 +102,7 @@ ul {
   margin-left: auto;
 }
 
-.logo {
+.page-header .logo {
     margin-right: 93px;  
 }
 
@@ -114,11 +114,6 @@ ul {
   margin-left: 0;
 }
 
-
-.site-nav .logo{
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .contacts.list .link {
   padding-top: 32px;
@@ -157,6 +152,10 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.portfolio-gallery-item .text{
+  color: var(--main-text-color);
+}
+
 .link {
   text-decoration: none;
 }
@@ -183,8 +182,8 @@ ul {
   background-color: var(--bg-color);
 }
 
+
 .page-footer .address-text {
-  margin-top: 20px;
   margin-bottom: 9px;
 }
 
@@ -310,6 +309,7 @@ ul {
 
 .section.features .section-list-item {
   margin-left: 30px;
+  width: 270px;
 }
 
 .section.features .section-list-item:first-child {
@@ -403,9 +403,11 @@ ul {
 }
 
 .portfolio-gallery-item {
+
+text-decoration: inherit;
+
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-gallery-item:nth-child(3n) {
@@ -416,7 +418,19 @@ ul {
   margin-bottom: 0px;
 }
 
+
+.portfolio-gallery-item .bottom-card{
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+
+
+
 .logo {
+
+  display: inline-block;
   max-width: 145px;
 
   text-decoration: none;
@@ -426,6 +440,12 @@ ul {
   font-size: 26px;
   line-height: 1.2;
 }
+
+
+.page-footer .logo {
+  margin-bottom: 20px;
+}
+
 .two {
   color: var(--secondary-text-color);
 }
